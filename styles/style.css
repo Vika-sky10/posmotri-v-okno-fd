@@ -148,9 +148,7 @@ ol {
   outline: 1px solid white;
 }
 
-  
-
-.content__video-card{
+.content__video-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: start;
@@ -174,7 +172,7 @@ ol {
   max-width: 196px;
   line-height: 16.2px;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 
@@ -187,12 +185,10 @@ ol {
   margin-top: 3px;
 }
 
-.content__video-card-description{
+.content__video-card-description {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
-    
 
 .visually-hidden {
   position: absolute;
@@ -309,17 +305,13 @@ height: 54px;
   text-decoration: underline;
 }
 
-.search-form__label:focus-visible {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid white;
 }
 
 .search-form__checkbox-list:focus-visible {
   outline: 1px solid white;
 } 
-
-.search-form__checkbox:focus {
-  outline: none;
-}
 
 .button {
   height: 34px;
