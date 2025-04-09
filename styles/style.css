@@ -312,10 +312,12 @@ height: 54px;
 .search-form__label:focus-visible {
   outline: 1px solid white;
 }
-.search-form__checkbox:focus-visible + .search-form__pseudo-checkbox {
-  outline: 2px solid white;
-}
-.search-form__checkbox.visually-hidden:focus {
+
+.search-form__checkbox-list:focus-visible {
+  outline: 1px solid white;
+} 
+
+.search-form__checkbox:focus {
   outline: none;
 }
 
