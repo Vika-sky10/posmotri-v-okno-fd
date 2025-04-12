@@ -12,10 +12,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
+  margin: 0 auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -57,15 +56,15 @@ ol {
 .content {
   display: grid;
   grid-auto-flow: column; 
-  align-items: center; 
+  align-items: end; 
   gap: 30px;
   width: 1140px;
+  margin: 0 auto;
 }
 
 .search-form {
   display: flex;
-  gap: 20px;
-  text-align: start;
+  gap: 40px;
   width: 711px;
   align-items: end;
 }
@@ -83,13 +82,14 @@ ol {
 }
 
 .title {
-  padding-bottom: 26px;
+  padding-bottom: 23px;
   font-family: Oswald;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
   color: white;
+  padding-top: 5px;
 }
 
 .content__accent {
@@ -112,6 +112,7 @@ ol {
   text-overflow: ellipsis;
   max-width: 196px;
   line-height: 100%;
+  margin-bottom: 4px;
 }
 
 .result__video-container {
@@ -127,6 +128,8 @@ ol {
   height: 100%; 
   object-fit: inherit;
   object-position: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .content__list-item {
@@ -175,6 +178,7 @@ ol {
   display: -webkit-box;
   line-clamp: 4;
   -webkit-box-orient: vertical;
+  letter-spacing: 0%;
 }
 
 .search-form__fieldset-title {
@@ -182,8 +186,7 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  padding-bottom: 5px;
-  margin-top: 3px;
+  padding-bottom: 8px;
 }
 
 .content__video-card-description {
@@ -207,6 +210,7 @@ ol {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 5px;
 }
 
 fieldset {
@@ -214,13 +218,7 @@ fieldset {
 }
 
 .search-form__fieldset {
-width: 225px;
-height: 54px;
-}
-
-.button {
-  width: 194px;
- cursor: pointer;
+  width: 225px;
 }
 
 .search-form__label {
@@ -230,8 +228,7 @@ height: 54px;
   line-height: 100%;
   display: flex;
   width: fit-content; 
-  align-items: center;
-  gap: 5px;
+  align-items: baseline;
   cursor: pointer;
 }
 
@@ -333,7 +330,7 @@ height: 54px;
   text-align: center;
   border: none;
   border: 1px solid white;
-
+  cursor: pointer;
 }
 
 .button:focus {
@@ -354,8 +351,8 @@ height: 54px;
 }
 
 .search-form__submit-button {
-  width: 194px;
-  margin-left: 40px;
+  width: 203px;
+  margin-bottom: 2px;
 }
 
 .more-button {
